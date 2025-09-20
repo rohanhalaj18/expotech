@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <link rel="stylesheet" href="../styles/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                TechStore
+            </a>
+    
+            <ul class="nav-links">
+                <li><a href="./main.html">main</a></li>
+                <li><a href="./product.html">kit</a></li>
+                <li><a href="/frontend/pages/About.html">About</a></li>
+                <li><a href="/frontend/pages/contact.html">Contact</a></li>
+            </ul>
+    
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="cart-icon cart-badge">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="main-container">
+        <!-- Hero Section -->
+        <section class="components-hero">
+            <h1>Premium Components</h1>
+            <p>Explore our extensive collection of high-quality electronic components. From microcontrollers to sensors, we
+                have everything you need for your next project.</p>
+        </section>
+    
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <div class="filter-group">
+                <label for="category">Category:</label>
+                <select id="category">
+                    <option value="">All Categories</option>
+                    <option value="microcontrollers">Microcontrollers</option>
+                    <option value="sensors">Sensors</option>
+                    <option value="memory">Memory</option>
+                    <option value="power">Power Supply</option>
+                    <option value="connectivity">Connectivity</option>
+                </select>
+            </div>
+    
+            <div class="filter-group">
+                <label for="price-range">Price Range:</label>
+                <select id="price-range">
+                    <option value="">All Prices</option>
+                    <option value="0-50">$0 - $50</option>
+                    <option value="50-100">$50 - $100</option>
+                    <option value="100-200">$100 - $200</option>
+                    <option value="200+">$200+</option>
+                </select>
+            </div>
+    
+            <div class="filter-group">
+                <label for="brand">Brand:</label>
+                <select id="brand">
+                    <option value="">All Brands</option>
+                    <option value="arduino">Arduino</option>
+                    <option value="raspberry">Raspberry Pi</option>
+                    <option value="espressif">Espressif</option>
+                    <option value="adafruit">Adafruit</option>
+                </select>
+            </div>
+    
+            <div class="search-box">
+                <input type="text" placeholder="Search components..." id="searchInput">
+                <i class="fas fa-search"></i>
+            </div>
+        </section>
+    
+        <!-- Products Grid -->
+        <section class="products-grid" id="productsGrid">
+            <!-- Product Card 1 -->
+            <div class="product-card" data-category="microcontrollers" data-price="45" data-brand="arduino">
+                <div class="product-images">
+                    <div class="image-slider">
+                        <div class="product-image">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="product-image">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="product-image">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="image-nav">
+                        <div class="image-dot active"></div>
+                        <div class="image-dot"></div>
+                        <div class="image-dot"></div>
+                    </div>
+                    <button class="image-arrows prev-arrow">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="image-arrows next-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="sale-badge">15% OFF</div>
+                </div>
+    
+                <button class="wishlist-btn">
+                    <i class="fas fa-heart"></i>
+                </button>
+    
+                <div class="product-content">
+                    <div class="product-category">Microcontrollers</div>
+                    <h3 class="product-title">Arduino Uno R4 WiFi</h3>
+    
+                    <p class="product-description">
+                        The Arduino Uno R4 WiFi is the latest addition to the iconic Uno family. Features enhanced
+                        performance with built-in WiFi connectivity and expanded memory.
+                    </p>
+    
+                    <div class="product-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">MCU:</span>
+                            <span class="spec-value">Renesas RA4M1</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Memory:</span>
+                            <span class="spec-value">256KB Flash, 32KB SRAM</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Connectivity:</span>
+                            <span class="spec-value">WiFi, USB-C</span>
+                        </div>
+                    </div>
+    
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="rating-count">(234 reviews)</span>
+                    </div>
+    
+                    <div class="product-price">
+                        <span class="price-current">$45.99</span>
+                        <span class="price-original">$53.99</span>
+                        <span class="discount-percent">15% OFF</span>
+                    </div>
+    
+                    <div class="stock-status in-stock">
+                        <i class="fas fa-check-circle"></i>
+                        <span>In Stock (24 available)</span>
+                    </div>
+    
+                    <div class="product-actions">
+                        <button class="btn btn-primary add-to-cart" data-product="Arduino Uno R4 WiFi" data-price="45.99">
+                            <i class="fas fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                        <a href="https://wa.me/1234567890?text=I'm%20interested%20in%20Arduino%20Uno%20R4%20WiFi"
+                            class="btn btn-whatsapp" target="_blank" title="Contact on WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product Card 2 -->
+            <div class="product-card" data-category="sensors" data-price="15" data-brand="adafruit">
+                <div class="product-images">
+                    <div class="image-slider">
+                        <div class="product-image">
+                            <i class="fas fa-thermometer-half"></i>
+                        </div>
+                        <div class="product-image">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <div class="product-image">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="image-nav">
+                        <div class="image-dot active"></div>
+                        <div class="image-dot"></div>
+                        <div class="image-dot"></div>
+                    </div>
+                    <button class="image-arrows prev-arrow">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="image-arrows next-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+    
+                <button class="wishlist-btn">
+                    <i class="fas fa-heart"></i>
+                </button>
+    
+                <div class="product-content">
+                    <div class="product-category">Sensors</div>
+                    <h3 class="product-title">DHT22 Temperature & Humidity Sensor</h3>
+    
+                    <p class="product-description">
+                        High precision digital temperature and humidity sensor with calibrated digital signal output.
+                        Perfect for weather stations and environmental monitoring.
+                    </p>
+    
+                    <div class="product-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Accuracy:</span>
+                            <span class="spec-value">±0.5°C, ±2-5%RH</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Range:</span>
+                            <span class="spec-value">-40°C to +80°C</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Interface:</span>
+                            <span class="spec-value">Single-Wire Digital</span>
+                        </div>
+                    </div>
+    
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="rating-count">(156 reviews)</span>
+                    </div>
+    
+                    <div class="product-price">
+                        <span class="price-current">$15.99</span>
+                    </div>
+    
+                    <div class="stock-status low-stock">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <span>Low Stock (7 left)</span>
+                    </div>
+    
+                    <div class="product-actions">
+                        <button class="btn btn-primary add-to-cart" data-product="DHT22 Sensor" data-price="15.99">
+                            <i class="fas fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                        <a href="https://wa.me/1234567890?text=I'm%20interested%20in%20DHT22%20Temperature%20Sensor"
+                            class="btn btn-whatsapp" target="_blank" title="Contact on WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product Card 3 -->
+            <div class="product-card" data-category="memory" data-price="89" data-brand="raspberry">
+                <div class="product-images">
+                    <div class="image-slider">
+                        <div class="product-image">
+                            <i class="fas fa-memory"></i>
+                        </div>
+                        <div class="product-image">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="product-image">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                    </div>
+                    <div class="image-nav">
+                        <div class="image-dot active"></div>
+                        <div class="image-dot"></div>
+                        <div class="image-dot"></div>
+                    </div>
+                    <button class="image-arrows prev-arrow">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="image-arrows next-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="sale-badge">20% OFF</div>
+                </div>
+    
+                <button class="wishlist-btn">
+                    <i class="fas fa-heart"></i>
+                </button>
+    
+                <div class="product-content">
+                    <div class="product-category">Memory</div>
+                    <h3 class="product-title">Raspberry Pi 5 - 8GB RAM</h3>
+    
+                    <p class="product-description">
+                        The latest Raspberry Pi 5 with 8GB LPDDR4X-4267 SDRAM. Features quad-core 64-bit Arm Cortex-A76 CPU
+                        and enhanced I/O capabilities.
+                    </p>
+    
+                    <div class="product-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">CPU:</span>
+                            <span class="spec-value">2.4GHz quad-core 64-bit</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">RAM:</span>
+                            <span class="spec-value">8GB LPDDR4X-4267</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Connectivity:</span>
+                            <span class="spec-value">WiFi 6, Bluetooth 5.0</span>
+                        </div>
+                    </div>
+    
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="rating-count">(312 reviews)</span>
+                    </div>
+    
+                    <div class="product-price">
+                        <span class="price-current">$89.99</span>
+                        <span class="price-original">$112.49</span>
+                        <span class="discount-percent">20% OFF</span>
+                    </div>
+    
+                    <div class="stock-status in-stock">
+                        <i class="fas fa-check-circle"></i>
+                        <span>In Stock (15 available)</span>
+                    </div>
+    
+                    <div class="product-actions">
+                        <button class="btn btn-primary add-to-cart" data-product="Raspberry Pi 5 8GB" data-price="89.99">
+                            <i class="fas fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                        <a href="https://wa.me/1234567890?text=I'm%20interested%20in%20Raspberry%20Pi%205%208GB"
+                            class="btn btn-whatsapp" target="_blank" title="Contact on WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product Card 4 -->
+            <div class="product-card" data-category="connectivity" data-price="25" data-brand="espressif">
+                <div class="product-images">
+                    <div class="image-slider">
+                        <div class="product-image">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <div class="product-image">
+                            <i class="fas fa-bluetooth"></i>
+                        </div>
+                        <div class="product-image">
+                            <i class="fas fa-broadcast-tower"></i>
+                        </div>
+                    </div>
+                    <div class="image-nav">
+                        <div class="image-dot active"></div>
+                        <div class="image-dot"></div>
+                        <div class="image-dot"></div>
+                    </div>
+                    <button class="image-arrows prev-arrow">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="image-arrows next-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+    
+                <button class="wishlist-btn">
+                    <i class="fas fa-heart"></i>
+                </button>
+    
+                <div class="product-content">
+                    <div class="product-category">Connectivity</div>
+                    <h3 class="product-title">ESP32-S3 DevKit-C</h3>
+    
+                    <p class="product-description">
+                        Advanced ESP32-S3 development board with dual-core processor, WiFi 6 support, and enhanced AI
+                        capabilities. Perfect for IoT projects.
+                    </p>
+    
+                    <div class="product-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">CPU:</span>
+                            <span class="spec-value">Dual-core Xtensa LX7</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Memory:</span>
+                            <span class="spec-value">512KB SRAM, 8MB Flash</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Features:</span>
+                            <span class="spec-value">WiFi 6, Bluetooth 5.0, AI</span>
+                        </div>
+                    </div>
+    
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="rating-count">(189 reviews)</span>
+                    </div>
+    
+                    <div class="product-price">
+                        <span class="price-current">$25.99</span>
+                    </div>
+    
+                    <div class="stock-status in-stock">
+                        <i class="fas fa-check-circle"></i>
+                        <span>In Stock (32 available)</span>
+                    </div>
+    
+                    <div class="product-actions">
+                        <button class="btn btn-primary add-to-cart" data-product="ESP32-S3 DevKit" data-price="25.99">
+                            <i class="fas fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                        <a href="https://wa.me/1234567890?text=I'm%20interested%20in%20ESP32-S3%20DevKit"
+                            class="btn btn-whatsapp" target="_blank" title="Contact on WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product Card 5 -->
+            <div class="product-card" data-category="power" data-price="35" data-brand="adafruit">
+                <div class="product-images">
+                    <div class="image-slider">
+                        <div class="product-image">
+                            <i class="fas fa-battery-three-quarters"></i>
+                        </div>
+                        <div class="product-image">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <div class="product-image">
+                            <i class="fas fa-charging-station"></i>
+                        </div>
+                    </div>
+                    <div class="image-nav">
+                        <div class="image-dot active"></div>
+                        <div class="image-dot"></div>
+                        <div class="image-dot"></div>
+                    </div>
+                    <button class="image-arrows prev-arrow">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="image-arrows next-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="sale-badge">10% OFF</div>
+                </div>
+    
+                <button class="wishlist-btn">
+                    <i class="fas fa-heart"></i>
+                </button>
+    
+                <div class="product-content">
+                    <div class="product-category">Power Supply</div>
+                    <h3 class="product-title">PowerBoost 1000C Charger</h3>
+    
+                    <p class="product-description">
+                        Rechargeable 5V power supply with built-in load sharing. Perfect for portable projects requiring
+                        stable power delivery.
+                    </p>
+    
+                    <div class="product-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Output:</span>
+                            <span class="spec-value">5V @ 1000mA</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Input:</span>
+                            <span class="spec-value">3.7V LiPoly/LiIon</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Features:</span>
+                            <span class="spec-value">Load sharing, Low Iq</span>
+                        </div>
+                    </div>
+    
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="rating-count">(98 reviews)</span>
+                    </div>
+    
+                    <div class="product-price">
+                        <span class="price-current">$35.99</span>
+                        <span class="price-original">$39.99</span>
+                        <span class="discount-percent">10% OFF</span>
+                    </div>
+    
+                    <div class="stock-status in-stock">
+                        <i class="fas fa-check-circle"></i>
+                        <span>In Stock (18 available)</span>
+                    </div>
+    
+                    <div class="product-actions">
+                        <button class="btn btn-primary add-to-cart" data-product="PowerBoost 1000C" data-price="35.99">
+                            <i class="fas fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                        <a href="https://wa.me/1234567890?text=I'm%20interested%20in%20PowerBoost%201000C%20Charger"
+                            class="btn btn-whatsapp" target="_blank" title="Contact on WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product Card 6 -->
+            <div class="product-card" data-category="sensors" data-price="42" data-brand="adafruit">
+                <div class="product-images">
+                    <div class="image-slider">
+                        <div class="product-image">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="product-image">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <div class="product-image">
+                            <i class="fas fa-video"></i>
+                        </div>
+                    </div>
+                    <div class="image-nav">
+                        <div class="image-dot active"></div>
+                        <div class="image-dot"></div>
+                        <div class="image-dot"></div>
+                    </div>
+                    <button class="image-arrows prev-arrow">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="image-arrows next-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+    
+                <button class="wishlist-btn">
+                    <i class="fas fa-heart"></i>
+                </button>
+    
+                <div class="product-content">
+                    <div class="product-category">Sensors</div>
+                    <h3 class="product-title">OV2640 Camera Module</h3>
+    
+                    <p class="product-description">
+                        High-quality 2MP camera module with JPEG output. Compatible with most microcontrollers and perfect
+                        for computer vision projects.
+                    </p>
+    
+                    <div class="product-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Resolution:</span>
+                            <span class="spec-value">2MP (1600x1200)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Format:</span>
+                            <span class="spec-value">JPEG, RGB, YUV</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Interface:</span>
+                            <span class="spec-value">SPI, I2C</span>
+                        </div>
+                    </div>
+    
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="rating-count">(127 reviews)</span>
+                    </div>
+    
+                    <div class="product-price">
+                        <span class="price-current">$42.99</span>
+                    </div>
+    
+                    <div class="stock-status out-stock">
+                        <i class="fas fa-times-circle"></i>
+                        <span>Out of Stock</span>
+                    </div>
+    
+                    <div class="product-actions">
+                        <button class="btn btn-primary" disabled>
+                            <i class="fas fa-ban"></i>
+                            Out of Stock
+                        </button>
+                        <a href="https://wa.me/1234567890?text=I'm%20interested%20in%20OV2640%20Camera%20Module%20-%20when%20will%20it%20be%20back%20in%20stock?"
+                            class="btn btn-whatsapp" target="_blank" title="Ask about availability">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Load More Section -->
+        <section class="load-more">
+            <button class="btn-load-more" id="loadMore">
+                <i class="fas fa-plus"></i>
+                Load More Products
+            </button>
+        </section>
+    </main>
+    <script src="../js/product.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
