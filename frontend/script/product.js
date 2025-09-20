@@ -101,24 +101,16 @@ function initCartFunctionality() {
       btn.disabled = true;
 
       setTimeout(() => {
-        cartCount++;
-        cartIcon.style.setProperty("--cart-count", `"${cartCount}"`);
-
         // Success animation
         btn.innerHTML = '<i class="fas fa-check"></i> Added!';
         btn.style.background = "#27ae60";
 
         setTimeout(() => {
-          btn.innerHTML = originalText;
-          btn.style.background = "";
-          btn.disabled = false;
-        }, 2000);
-
-        // Cart bounce animation
-        cartIcon.style.animation = "bounce 0.6s ease";
-        setTimeout(() => {
-          cartIcon.style.animation = "";
-        }, 600);
+          // Redirect to checkout page with product data
+          window.location.href = `../pages/order.html?product=${encodeURIComponent(
+            product
+          )}&price=${price}`;
+        }, 1000);
       }, 1000);
     });
   });
