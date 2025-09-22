@@ -73,7 +73,7 @@ function initCart() {
     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
 
     try {
-      const response = await fetch("http://localhost:5000/api/enquiry", {
+      const response = await fetch("http://localhost:5000/messages/enquiry", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
