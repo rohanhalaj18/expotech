@@ -1,8 +1,8 @@
-const express = require("express");
+const express = require('express');
 const app = express();
 const router = express.Router();
-const { enquiry } = require("../contrlores/messageCons");
+const {enquiry} = require('../contrlores/messageCons');
 
-router.post("/enquiry", enquiry);
+router.post('/enquiry', enquiry);
 
 module.exports = router;

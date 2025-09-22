@@ -5,17 +5,8 @@
   "scripts": {
     "start": "nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rohanhalaj18/expotech.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rohanhalaj18/expotech/issues"
-  },
-  "homepage": "https://github.com/rohanhalaj18/expotech#readme",
   "description": "",
   "dependencies": {
     "cors": "^2.8.5",
